@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register Converter</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main-content">
+		<div class="site-name">Конвертёр регистров</div><br>
+		<div class="select-registr-metod">
+			<input type="radio" name="inputs-registr" id="inp-1" checked="checked">
+			<label for="inp-1">ВЕРХНИЙ РЕГИСТР</label>
+
+			<input type="radio" name="inputs-registr" id="inp-2">
+			<label for="inp-2">нижний регистр</label>
+
+			<input type="radio" name="inputs-registr" id="inp-3">
+			<label for="inp-3">Заглавные Буквы</label>
+
+			<input type="radio" name="inputs-registr" id="inp-4">
+			<label for="inp-4">Первая заглавная</label>
+
+			<input type="radio" name="inputs-registr" id="inp-5">
+			<label for="inp-5">инверСИЯ РЕГистра</label>
+		</div><br>
+		<textarea id="txt-input" placeholder="Введите текст" spellcheck="false"></textarea>
+		<br><br>
+		<div class="result-block">
+			<div class="result-block-name">Результат:</div><br>
+			<div id="result-block-div">Вы ничего не ввели :(</div>
+		</div><br><br>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html

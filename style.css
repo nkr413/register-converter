@@ -1,0 +1,101 @@
+body {padding: 0;margin: 0;background: #333333; scroll-behavior: smooth;}
+* {transition: 0.3s ease-in-out; font-family: 'Roboto Slab', serif;}
+button:focus {outline: none;}
+::selection {background: white; color: black;}
+
+::-webkit-scrollbar {background: transparent; width: 10px;}
+::-webkit-scrollbar-thumb {background: rgba(243, 21, 47, 0.5); border-radius: 0px;}
+::-webkit-scrollbar-track-piece {background: transparent;}
+
+.main-content {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid transparent;
+	text-align: center;
+	position: relative;
+	top: 20px;
+}
+
+.site-name {
+	font-size: 20pt;
+	letter-spacing: 2px;
+	color: white;
+	user-select: none; 
+}
+
+#txt-input {
+	font-family: 'Nunito', sans-serif;
+	width: 80%;
+	height: 250px;
+	border: 2.5px solid transparent;
+	background: rgba(243, 21, 47, 0.2);
+	color: white;
+	font-size: 16pt;
+	letter-spacing: 2px;
+	padding: 8px;
+	resize: none;
+}
+#txt-input:focus {outline: none; border: 2.5px solid rgb(243, 21, 47);}
+
+.result-block {
+	color: white; 
+	border: 2px solid transparent; 
+	width: 82%; 
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.result-block-name {
+	font-size: 18pt;
+	letter-spacing: 2px;
+	color: white;
+	text-align: center;
+	user-select: none; 
+}
+
+#result-block-div {
+	font-family: 'Nunito', sans-serif;
+	font-size: 18pt;
+	letter-spacing: 2px;
+	text-align: left;
+	padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: 2.5px solid transparent;
+	background: rgba(243, 21, 47, 0.2);
+	color: white;
+	display: inline-block;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#result-block-div:hover {border: 2.5px solid rgb(243, 21, 47);}
+
+.select-registr-metod {
+	border: 2px solid transparent;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.select-registr-metod input {display: none;}
+.select-registr-metod label {
+	border: 2.5px solid transparent;
+	background: rgba(243, 21, 47, 0); 
+	padding: 10px;
+	color: white;
+	user-select: none;
+	letter-spacing: 1.5px;
+	display: block;
+}
+.select-registr-metod label:hover {border-bottom: 2.5px solid rgba(243, 21, 47, 1);}
+
+#inp-1:checked + label,
+#inp-2:checked + label,
+#inp-3:checked + label,
+#inp-4:checked + label,
+#inp-5:checked + label {border: 2.5px solid rgb(243, 21, 47);background: rgba(243, 21, 47, 0.3);}
+
+
+
